@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>SQL Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>SQL Documentation</h1>
+      </header>
+      <ul class="menu">
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction </a>
+        </li>
+        <li>
+          <a class="nav-link" href="#SQL_Syntax">SQL Syntax</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#SELECT_Query">SELECT Query</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#WHERE_Clause">WHERE Clause</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#AND_&_OR_Clauses">AND & OR Clauses</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#UPDATE_Query">UPDATE Query</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#DELETE_Query">DELETE Query</a>
+        </li>
+        <li class="reference">
+          <a class="nav-link" href="#Reference">Reference</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+        <article>
+          <p>Have you ever heard of SQL? I would probably say yes to a student majoring in computer science. But what is up for the others? If your answer is no, do not worry; this article will provide you with some information about SQL. Let's jump right in.</p>
+          <h3>What is SQL?</h3>
+          <p>Structured query language (SQL) is a computer language used to store and manipulate data in relational databases. A relational database is a relational database that stores information in structured format, with rows and columns reflecting distinct data qualities and the various connections between the data values. SQL commands can be used to save, update, delete, search, and retrieve data from a database. SQL may also be used to maintain and improve database performance.</p>
+          <h3>Why SQL is important?</h3>
+          <p>Structured query language (SQL) is a famous query language used in a broad range of applications. SQL is learned and used by data analysts and developers since it interacts effectively with so many programming languages. For example, they can use the programming language Java to integrate SQL queries in order to develop high-performance data processing applications with major SQL database systems such as Oracle or MS SQL Server. SQL is also relatively simple to learn since the statements use familiar English vocabulary.</p>
+          <h3>When to use SQL?</h3>
+          <p>SQL helps in the management of information maintained in databases, giving users to access the specific information they require when necessary. SQL is a powerful programming language despite its straightforwardness. SQL is capable of inserting data into database tables, transforming the data in established database tables, and deleting data from SQL database tables. SQL may also change the database structure by adding, updating, and removing tables and other database objects. SQL is a series of commands that is used to alter data in databases. SQL INSERT is utilized to add data to database tables; SQL SELECT is utilized to retrieve data from database tables; and SQL UPDATE is used to change existing database records.</p>
+          <h3>Benefits of SQL</h3>
+          <p class="list">Listed below are a few benefits of using SQL.</p>
+          <ul>
+            <li><span class="bold">SQL is portable.</span> It is compatible with PCs, servers, laptops, and certain mobile devices. It is supported by local internet and intranet systems. Its mobility makes it a great alternative for consumers because they can easily transfer it from one device to another.</li>
+            <li><span class="bold">It responds fast to requests.</span> SQL can get data of any size in a timely and effective manner. It can also do operations like insertion, deletion, and data modification reasonably rapidly. Fast query processing saves time while assuring accuracy, allowing you to avoid wasting hours waiting for your data or sharing it with others.</li>
+            <li><span class="bold">It does not require any coding abilities.</span> Coding is a difficult method of interacting with computers. Coding, also known as computer programming, can take a lot of experience and understanding before it can be used, making it difficult for others to understand. SQL, however, does not need coding expertise, only the usage of basic terms such as "select," "insert into," and "update."</li>
+            <li><span class="bold">It adopts standardized terminology.</span> SQL's standardized language makes it extremely accessible to all users. SQL provides a consistent foundation and mostly employs English terms and statements, making it simple to understand and write even for individuals with little prior knowledge.</li>
+            <li><span class="bold">It offers a variety of data interpretations.</span> When using SQL, you may construct several data views, offering different users distinct perspectives on the structure and content of the database.</li>
+            <li><span class="bold">It's own code is open - source platform.</span> MySQL, MariaDB, and PostGres all provide free SQL databases that may be used by huge communities at a cheap cost.</li>
+            <li><span class="bold">It’s used by major database management system vendors.</span> SQL is used by the majority of major database management systems, including those from IBM, Oracle, and Microsoft. The accessibility of SQL is an important consideration.</li>
+          </ul>
+        </article>
+      </section>
+      
+      <section id="SQL_Syntax" class="main-section">
+        <header>
+          <h2>SQL Syntax</h2>
+        </header>
+        <article>
+          <p>Syntax is the group of rules that govern how language parts are integrated accurately. SQL syntax is based on English syntax and shares many similarities with Visual Basic for Applications (VBA) syntax.</p>
+          <p>Every SQL statements begin with one of the following terms SELECT, INSERT, UPDATE, DELETE, ALTER, DROP, CREATE, USE, SHOW, and finish with a semicolon (;).</p>
+          <p>The most essential thing to remember here is that SQL is case insensitive, which means that in SQL statements, SELECT and select have the same meaning. MySQL, on the other hand, distinguishes between table names. So, if you're dealing with MySQL, you'll need to offer table names exactly as they appear in the database.</p>
+        </article>
+      </section>
+
+      <section id="SELECT_Query" class="main-section">
+        <header>
+          <h2>SELECT Query</h2>
+        </header>
+        <article>
+          <p>The SQL SELECT command retrieves data from a database table and returns it in the form of a result table. These result tables are referred to as result-sets.</p>
+          <h3>SELECT Syntax</h3>
+          <div class="code-block">
+            <code><span class="reserved-word">SELECT</span> column1,column2, ...</code>
+            <code><span class="reserved-word">FROM</span> table_name;</code>
+          </div>
+          <p>If you would like to retrieve the entire fields in the field, use the following syntax.</p>
+           <div class="code-block">
+            <code><span class="reserved-word">SELECT</span> *</code>
+            <code><span class="reserved-word">FROM</span> table_name;</code>
+          </div>
+          <h3>SELECT * Example</h3>
+          <p>The following SQL statement will retrieve all of the columns of data from employees table </p>
+          <div class="code-block">
+            <code><span class="reserved-word">SELECT</span> *</code>
+            <code><span class="reserved-word">FROM</span> employees;</code>
+          </div>
+          <h3>SELECT Column Example</h3>
+          <p>The following SQL statement will retrieve the columns of data (country_id, country_name, and region id) from table countries.</p>
+          <div class="code-block">
+            <code><span class="reserved-word">SELECT</span> country_id, country_name, region_id</code>
+            <code><span class="reserved-word">FROM</span> countries;</code>
+          </div>
+        </article>
+      </section>
+
+      <section id="WHERE_Clause"class="main-section">
+        <header>
+          <h2>WHERE Clause</h2>
+        </header>
+        <article>
+          <p>The SQL WHERE clause specifies a criteria for retrieving data from a single table or connecting several tables. Only if the provided condition is met does it return a specific value from the table. You should utilize the WHERE clause to filter the records and get just those that are required.</p>
+          <p>The WHERE clause is used not only in the SELECT statement, but also in the UPDATE, DELETE, and other statements that we will look at in the following chapters.</p>
+          <h3>WHERE Syntax</h3>
+          <div class="code-block">
+            <code><span class="reserved-word">SELECT</span> column1, column2,</code>
+            <code><span class="reserved-word">FROM</span> table_name</code>
+            <code><span class="reserved-word">WHERE</span> [condition];</code>
+          </div>
+          <h3>WHERE Clause Example</h3>
+          <p>The following SQL statement will retrieve columns of data title and year from d_cds table where the year is before 2000.</p>
+          <div class="code-block">
+            <code><span class="reserved-word">SELECT</span> title, year</code>
+            <code><span class="reserved-word">FROM</span> d_cds</code>
+            <code><span class="reserved-word">WHERE</span> year < 2000;</code>
+          </div>
+        </article>
+      </section>
+
+      <section id="AND_&_OR_Clauses" class="main-section">
+        <header>
+          <h2>AND & OR Clauses</h2>
+        </header>
+        <article>
+          <p>The SQL AND and OR operators are used to combine multiple conditions in a SQL statement to narrow data. The conjunctive operators are these two operators.</p>
+          <p>These operators allow you to perform multiple comparisons with different operators within the same SQL statement</p>
+          <h3>The AND operator Syntax</h3>
+          <div class="code-block">
+            <code><span class="reserved-word">SELECT</span> column1, column2, columnN </code>
+            <code><span class="reserved-word">FROM</span> table_name</code>
+            <code><span class="reserved-word">WHERE</span> [condition1] AND [condition2]...AND [conditionN];</code>
+          </div>
+          <h3>AND Operator Example</h3>
+          <div class="code-block">
+            <code><span class="reserved-word">SELECT</span> first_name, last_name</code>
+            <code><span class="reserved-word">FROM</span> f_staffs</code>
+            <code><span class="reserved-word">WHERE</span> salary > 6.50 AND staff_type != 'Order Taker';</code>
+          </div>
+          <p>Using the AND operator, you may combine N criteria. All conditions separated by the AND must be TRUE for the SQL statement to take action, whether it is a transaction or a query.</p>
+          <h3>The OR Operator Syntax</h3>
+          <div class="code-block">
+            <code><span class="reserved-word">SELECT</span> column1, column2, columnN </code>
+            <code><span class="reserved-word">FROM</span> table_name</code>
+            <code><span class="reserved-word">WHERE</span> [condition1] OR [condition2]...OR [conditionN];</code>
+          </div>
+          <p>Using the OR operator, you may combine N conditions. For the SQL statement to perform an action, whether it is a transaction or a query, just ONE of the requirements separated by the OR must be TRUE.</p>
+          <h3>OR Operator Example</h3>
+          <div class="code-block">
+            <code><span class="reserved-word">SELECT</span> department_name, manager_id, location_id </code>
+            <code><span class="reserved-word">FROM</span> departments</code>
+            <code><span class="reserved-word">WHERE</span> location_id = 2500 OR manager_id = 124;</code>
+          </div>
+        </article>
+      </section>
+
+      <section id="UPDATE_Query"class="main-section">
+        <header>
+          <h2>UPDATE Query</h2>
+        </header>
+        <article>
+          <p>The SQL UPDATE Query is used to alter existing table records. To update just the specified rows, use the WHERE clause with the UPDATE query; otherwise, all rows will be changed.</p>
+          <h3>UPDATE Syntax</h3>
+          <div class="code-block">
+            <code><span class="reserved-word">UPDATE</span> table_name</code>
+            <code><span class="reserved-word">SET</span> column1 = value1, column2 = value2...., columnN = valueN</code>
+            <code><span class="reserved-word">WHERE</span> [condition];</code>
+          </div>
+          <p>Using the AND and OR operators, you might well aggregate N requirements.</p>
+          <h3>UPDATE query Example</h3>
+          <div class="code-block">
+            <code><span class="reserved-word">UPDATE</span> customers</code>
+            <code><span class="reserved-word">SET</span> address = 'Manhattan Street'</code>
+            <code><span class="reserved-word">WHERE</span> salary > 100000;</code>
+          </div>
+        </article>
+      </section>
+
+      <section id="DELETE_Query" class="main-section">
+        <header>
+          <h2>DELETE Query</h2>
+        </header>
+        <article>
+          <p>To remove existing records from a table, use the SQL DELETE Query.</p> 
+          <p>You may use the WHERE clause in conjunction with a DELETE query to delete only the chosen rows; alternatively, all records are deleted.</p>
+          <h3>DELETE Syntax</h3>
+          <div class="code-block">
+            <code><span class="reserved-word">DELETE</span> table_name</code>
+            <code><span class="reserved-word">WHERE</span> [condition];</code>
+          </div>
+          <h3>DELETE Query Example</h3>
+          <div class="code-block">
+            <code><span class="reserved-word">DELETE</span> customers</code>
+            <code><span class="reserved-word">WHERE</span> id = 100;</code>
+          </div>
+        </article>
+      </section>
+
+      <section id="Reference" class="main-section">
+        <header>
+          <h2>Reference</h2>
+        </header>
+        <article>
+          <p>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/sql" target="_blank">Tutorialspoint </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

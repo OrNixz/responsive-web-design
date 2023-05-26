@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    min-width: 290px;
+    border: 3px solid rgba(0, 22, 22, 0.4);
+  }
+  
+  #navbar header h1 {
+    font-size: 1.6rem;
+    color: #3d3434;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  #navbar hr {
+    margin: 10px 0px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .menu ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: scroll
+  }
+  
+  .menu li {
+    color: #4d4f50;
+    border-top: 1px solid;
+    position: relative;
+    width: 100%;
+    list-style: none;
+  }
+  
+  .menu li.reference {
+    border-bottom: 1px solid;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px 10px;
+    color: #4c4545;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    color: #ffffff;
+    background-color: #827a7a; 
+  }
+  
+  #main-doc {
+    margin-left: 310px;
+    margin-bottom: 110px;
+    padding: 15px;
+    font-size: 1.1em;
+  }
+  
+  .main-section h2 {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+  }
+  
+  .main-section article {
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 0.96em;
+    color: #4d4e53;
+  }
+  
+  .main-section h3 {
+    padding: 5px 0px;
+  }
+  
+  .main-section p {
+    padding: 5px 0px;
+  }
+  
+  .main-section p.list {
+    padding-bottom: 20px;
+  }
+  
+  .main-section li {
+    margin: -10px 0 5px 20px;
+    padding-bottom: 10px;
+  }
+  
+  .main-section li span {
+    font-weight: bold;
+  }
+  
+  code{
+    display: block;
+    position: relative;
+    background-color: #d8d8d8;
+    text-align: left;
+    border-left: 2px solid #423e3e;
+    margin: 0 0 0 30px;
+    padding: 5px 0 0 5px;
+    line-height: 1.2;
+  }
+  
+  .reserved-word {
+    font-weight: 500;
+    color: #1b6ea8;
+  }
+  
+  @media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar header h1{
+      font-size: 1.3em;
+      display: block;
+    }
+  
+    #navbar {
+      width: 30%;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      border: none;
+      border-right: 2px solid rgba(0, 22, 22, 0.4);
+    }
+  
+    .menu{
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+  
+    .menu ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: scroll
+    }
+  
+    .menu li {
+      color: #4d4f50;
+      border-top: 1px solid;
+      position: relative;
+      width: 100%;
+      list-style: none;
+    }
+  
+    .menu a {
+      display: block;
+      padding: 10px ;
+      color: #4c4545;
+      text-decoration: none;
+    }
+  
+    .menu a:hover {
+      color: #ffffff;
+      background-color: #827a7a; 
+    }
+  
+    #main-doc {
+      padding-left: 0;
+      margin-left: 290px;
+    }
+  }
